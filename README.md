@@ -1,12 +1,10 @@
-# Angular 1.x with jspm
+# ReactJs with jspm
 
 Other stuff used:
 * bootstrap
 * sass (css preprocessor) : node-sass used, so no Ruby install needed
-* anguler-ui-router 
 * karma
 * jasmine
-* angular-ice ('iceUnit' test helper for angular code)
 * babel transpiling to es5
 * eslint
 * browser-sync
@@ -28,9 +26,11 @@ Other stuff used:
 
 ## To Do's
 
-* use ngForward ?
-* typescript ?
-* optional: refactor angular-ice so that iceUnit can be imported as a module
+* Imports do not always work. Importing local files seems to be ok, but eg the react-router import in app.js returns an undefined. What causes this?
+* Eslint goes crazy about declared but unused properties, eg: the React imports on almost every page. Ive disabled the linting on every JS file we've got so far, but there must be a better solution
+* during npm run setup/npm run dev a few dependencies are not found. Missing the 'estraverse-fb' module has caused errors on my build several times, but other random missing stuff has popped up too. 'npm install'-ing the missing stuff fixed the problems, but this is just a temporary fixed
+* during npm run dev, some other problems are printed out (too many windows open, unexpected characters-errors on the html tags in the jsx files, ...). The app does start up though
+*no testing infrastructure yet (need to take a look at that Jest library)
 
 ## example shim configuration
 
@@ -41,26 +41,6 @@ Other stuff used:
 
 ```shell
 jspm install angular-bootstrap=github:angular-ui/bootstrap-bower@~1.2.4 -o "{ registry: 'jspm', main: 'ui-bootstrap-tpls', 'format': 'cjs', dependencies: { angular: '1.5.0' }, shim: { 'ui-bootstrap-tpls': { deps: ['angular'] } } }"
-```
-
-## public data api being used
-
-### opencultuurdata.nl
-
-* [api - searching within a single collection](http://docs.opencultuurdata.nl/user/api.html#searching-within-a-single-collection)
-* [api - rest search](http://docs.opencultuurdata.nl/user/api.html#rest-search)
-
-### example
-
-* [http://api.opencultuurdata.nl/v0/openbeelden/search](http://api.opencultuurdata.nl/v0/openbeelden/search)
-* POST
-* Content-Type: application/x-www-form-urlencoded
-* Payload:
-```shell
-{
-  "query": "auto",
-  "size": 20
-}
 ```
 
 ## License
