@@ -30,7 +30,7 @@ Other stuff used:
 * Eslint goes crazy about declared but unused properties, eg: the React imports on almost every page. Ive disabled the linting on every JS file we've got so far, but there must be a better solution
 * during npm run setup/npm run dev a few dependencies are not found. Missing the 'estraverse-fb' module has caused errors on my build several times, but other random missing stuff has popped up too. 'npm install'-ing the missing stuff fixed the problems, but this is just a temporary fix
 * during npm run dev, some other problems are printed out (too many windows open, unexpected characters-errors on the html tags in the jsx files, ...). The app does start up though
-* no testing infrastructure yet (need to take a look at that Jest library)
+* no React testing infrastructure yet (need to take a look at that Jest library) -Does already have Karma/Jasmine, though
 
 ## example shim configuration
 
