@@ -1,0 +1,58 @@
+/* for angular-bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+app-content {
+    app-header {
+        .navbar {
+            background-color: $header-bg;
+            color: $header-color;
+
+            span.appTitle {
+                color: $white;
+            }
+
+            span.emphasys {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .container {
+        color: $body-color;
+    }
+
+    .jumbotron {
+        padding-bottom: 10px;
+        background-color: $jumbotron-bg;
+
+        //.container {
+        //    color: $black;
+        //}
+    }
+
+    .btn-primary {
+        color: $black;
+        background-color: $primary-color;
+        border-color: $lime-darkest;
+    }
+    .btn-primary:focus,
+    .btn-primary.focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .btn-primary:hover {
+        color: $black;
+        background-color: $secondary-color;
+        border-color: $lime-darkest;
+    }
+
+    .form-control {
+        display: inline;
+        width: auto;
+        color: $lime-darkest;
+        background-color: $white;
+        border: 1px solid $lime-darkest;
+    }
+
+    app-footer {
+    }
+}
