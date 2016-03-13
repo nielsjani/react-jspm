@@ -1,4 +1,4 @@
-/*eslint-disable */
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import {DefaultRoute, Route} from 'react-router';
 

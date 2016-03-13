@@ -6,7 +6,9 @@
   },
   "parser": "babel-eslint",
   "globals": {
-    "iceUnit": false
+    "Handler":true,
+    "document":true,
+    "React":true
   },
   "plugins": ["babel"],
   "rules": {
