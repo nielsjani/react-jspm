@@ -28,8 +28,6 @@ module.exports = function (config) {
         jspm: {
             config: 'src/jspm.conf.js',
             loadFiles: [
-                'src/jspm_packages/github/angular/bower-angular-mocks@1.5.0/angular-mocks.js',
-                'src/jspm_packages/github/bverbist/bower-angular-ice@0.8.0/angular-ice.unitTester.js',
                 'src/app/app.js',
                 'src/app/**/*.spec.js'
             ],
