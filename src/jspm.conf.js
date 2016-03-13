@@ -14,11 +14,13 @@ System.config({
   },
 
   map: {
+    "ansi-styles": "npm:ansi-styles@2.2.0",
     "babel": "npm:babel-core@5.8.35",
     "babel-preset-react": "npm:babel-preset-react@6.5.0",
     "babel-runtime": "npm:babel-runtime@5.8.35",
     "base62": "npm:base62@1.1.0",
     "bootstrap": "github:twbs/bootstrap@3.3.6",
+    "brorand": "npm:brorand@1.0.5",
     "clean-css": "npm:clean-css@3.4.10",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
@@ -27,6 +29,7 @@ System.config({
     "json": "github:systemjs/plugin-json@0.1.0",
     "query-string": "npm:query-string@3.0.1",
     "react": "npm:react@0.14.7",
+    "react-dom": "npm:react-dom@0.14.7",
     "react-router": "npm:react-router@2.0.1",
     "reactify": "npm:reactify@1.1.1",
     "text": "github:systemjs/plugin-text@0.0.7",
@@ -591,6 +594,9 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:react-dom@0.14.7": {
+      "react": "npm:react@0.14.7"
     },
     "npm:react-router@2.0.1": {
       "history": "npm:history@2.0.1",

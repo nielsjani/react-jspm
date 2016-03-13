@@ -26,12 +26,12 @@ Other stuff used:
 
 ## To Do's
 
-* Imports do not always work. Importing local files seems to be ok, but eg the react-router import in app.js returns an undefined. What causes this?
-* Eslint goes crazy about declared but unused properties, eg: the React imports on almost every page. Ive disabled the linting on every JS file we've got so far, but there must be a better solution
+* Eslint goes crazy about declared but unused properties, eg: the React imports on almost every page. Fixed a few errors, but eslint globals and react do not seem to be friends.
 * Possibly fixed: during npm run setup/npm run dev a few dependencies are not found. Missing the 'estraverse-fb' module has caused errors on my build several times, but other random missing stuff has popped up too. 'npm install'-ing the missing stuff fixed the problems, but this is just a temporary fix
-* Fixed (still get some warnings): during npm run dev, some other problems are printed out (too many windows open, unexpected characters-errors on the html tags in the jsx files, ...). The app does start up though
+* testing phase goes crazy during the watch task. Something about too many windows open at once
+* existing (regular old karma tests) are not picked up during npm run dev 
 * no React testing infrastructure yet (need to take a look at that Jest library) -Does already have Karma/Jasmine, though
-
+* bootstrap css is present, but integrated via index.html. Maybe we should try to put those into the gulp config?
 ## example shim configuration
 
 * reason
